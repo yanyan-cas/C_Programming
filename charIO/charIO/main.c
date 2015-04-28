@@ -12,7 +12,6 @@ int main(int argc, const char * argv[]) {
     // insert code here...
 //	int c;
 
-//	long nc;
 	double nc;
 
 //	c = getchar();
@@ -28,10 +27,20 @@ int main(int argc, const char * argv[]) {
 //	nc = 0;
 //	while(getchar() != EOF)
 //		++nc;
-//	printf("%ld\n", nc);
+//	printf("%f\n", nc);
 	
-	for(nc = 0; getchar() != EOF; ++nc)
+	for(nc = 0; getchar() != '\n'; ++nc)
 		;
-	printf("%f\n", nc);
+	printf("%.0f\n", nc);
+
+//	int c, n1;
+
+//	n1 = 0;
+
+//	while((c = getchar()) != EOF)
+//		if(c == '\n')
+//			++n1;
+//		printf("%d\n", n1);
+
 }
 
